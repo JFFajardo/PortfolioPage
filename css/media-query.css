@@ -74,10 +74,12 @@
   .nav-link {
     margin-right: 10px;
     margin-left: 10px;
-    font-size: xx-small;
+  }
+  .nav-link a {
+    font-size: 12px;
   }
   .nav-logo img {
-    width: 200px;
+    width: 75%;
   }
 
   .main-container__text {
@@ -90,25 +92,28 @@
   }
   .news {
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px;
   }
   .news-content {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .news-content img {
-    grid-row: 2;
+  .news-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .news-content .news-info {
-    grid-row: 3;
-    grid-column: 1;
-  }
+
   .posts {
     width: 100%;
     padding: 10px;
   }
   .posts-blog {
     max-width: 100%;
+    border-top: 1px solid var(--clr-bg);
   }
 
   /*Página de Blog*/
@@ -117,9 +122,20 @@
   }
   .main-blog__content img {
     padding: 0;
+    width: 100%;
   }
   .blog-content__article {
     padding: 0;
+    text-align: center;
+  }
+  .blog-content__article p {
+    padding: 0;
+    text-align: justify;
+  }
+  .blog-content__article h4 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
   }
 
   .section-contact {
@@ -129,7 +145,12 @@
   }
   .contact {
     display: grid;
-    margin: 0px;
+    margin: 10px;
+  }
+  .contact img {
+    width: 70px;
+    display: inline-block;
+    padding: 10px;
   }
 
   /*Página de Perfil*/
@@ -161,5 +182,12 @@
     padding: 5px;
     max-width: 90%;
     text-align: justify;
+  }
+  .project h1 {
+    margin: 20px 0;
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
   }
 }
