@@ -29,6 +29,7 @@
         <div class="nav-link">
             <a href="blogs.html"> My Blogs</a>
             <a href="profile.html"> About Me</a>
+            <a href="comments.html"> Comments</a>
         </div>
       </nav>
     </header>
@@ -116,23 +117,28 @@
       <div class="contact">
         <img src="img/013-newsletter.png" alt="img blog" />
         <div class="contact-info">
-          <p href="">Contact Me</p>
-          <br>       
-          <a>johan.fajardo@gmail.com</a>
-          <p><a href=""><i class="fab fa-whatsapp"></i><span> +57-3122950282</span></a>          </p>
-          
+          <p >Contact Me:</p> 
+          <br>
+          <a href="mailto: johan.fajardo@gmail.com"> Send Mail<span><i class="fab fa-google"></i></span></a>
+          <br>
+          <a href="https://wa.me/+573122950282"">Text Me <span><i class="fab fa-whatsapp"></i></span></a>
         </div>
       </div>
       <div class="contact">
         <img src="img/006-like.png" alt="img like" />
         <div class="contact-info">
-          <p href="">Comment Here</p>
-          <p>Dejanos tus comentarios y/o recomendaciónes          </p>
+          <p>Let your comments here:</p>  
+          <form onsubmit="guardarComentario(event)">
+            <input type="text" id="nombre" placeholder="Your Name" required><br>
+            <textarea id="commentText" rows="5" cols="50" placeholder="Your comment" required></textarea>
+            <button class="pro-btn" type="submit">Send</button>
+          </form>       
         </div>
       </div>
     </section>
     <footer>
       <p>Johan Fajardo@. All Rights Reserved</p>
     </footer>
+    <script src="./commentsSend.js"></script>
   </body>
 </html>

@@ -76,7 +76,7 @@
     margin-left: 10px;
   }
   .nav-link a {
-    font-size: 12px;
+    font-size: 10px;
   }
   .nav-logo img {
     width: 75%;
@@ -140,18 +140,37 @@
 
   .section-contact {
     padding: 10px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
   }
   .contact {
-    display: grid;
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
   }
   .contact img {
     width: 70px;
+    height: 70px;
     display: inline-block;
     padding: 10px;
   }
+  .contact-info {
+    width: 100%;
+    justify-self: center;
+
+  }
+  .contact-info textarea,
+input {
+  width: 300px;
+  border: 1px solid var(--clr-bg);
+  padding: 5px;
+  margin: 5px;
+}
 
   /*Página de Perfil*/
   .profile {
@@ -189,5 +208,10 @@
   }
   footer p {
     text-align: center;
+  }
+  .hola-div {
+
+    width: 90%;
+
   }
 }
